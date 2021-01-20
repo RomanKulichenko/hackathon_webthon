@@ -17,5 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    #  /shop/buckwheat
     path('admin/', admin.site.urls),
 ]

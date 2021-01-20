@@ -1,11 +1,8 @@
 import './App.css';
-import Main from "./pages/main/Main";
-
+import AppRouter from "./router/AppRouter";
 function App() {
   return (
-    <div className="app">
-      <Main />
-    </div>
+      <AppRouter/>
   );
 }
 
