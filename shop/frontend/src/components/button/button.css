@@ -1,0 +1,29 @@
+
+.button {
+    outline: none;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 7px 19px 8px;
+    border: 1px solid transparent;
+    font-family: ProximaNova,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.666666666666667;
+    text-decoration: none;
+    text-align: center;
+    color: #373737;
+    background: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.load-more-items__btn {
+    margin: 20px auto 10px;
+    display: block;
+    color: #fff;
+    background: #ff8522;
+    text-transform: uppercase;
+
+}
