@@ -10,7 +10,6 @@ class Category(models.Model):
         return self.name
 
 
-
 class Product(models.Model):
 
     # Общее описание любого продукта
@@ -27,7 +26,6 @@ class Product(models.Model):
 
     def __str__(self):
         return self.title
-
 
 
 class BuckwheatProduct(Product):
