@@ -9,7 +9,7 @@
     position: relative;
     transition: box-shadow .35s;
     padding: 1rem;
-    margin: 1rem;
+    margin-bottom: 15px;
 }
 
 .card:hover {
