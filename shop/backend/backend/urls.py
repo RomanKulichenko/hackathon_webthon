@@ -19,5 +19,5 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/products/', include(shop.api.urls)),
+    path('api/v1/', include("shop.api.urls")),
 ]
