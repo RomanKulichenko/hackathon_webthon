@@ -1,0 +1,11 @@
+.block {
+    margin-top: -2rem;
+}
+
+.MuiRadio-colorSecondary.Mui-checked {
+    color: orange;
+}
+
+.MuiTypography-body1 {
+    font-size: 2rem;
+}

@@ -1,107 +1,20 @@
-import React from 'react'
+import React, {createContext, useContext, useEffect, useState} from 'react'
 import './cards.css'
 import Card from "../card/Card";
-import Button from "../button/Button";
-
-let data = [
-    {
-        id: 0,
-        img: 'https://cutt.ly/zjGeLVQ',
-        productDescription: 'Салат Премия с морской капустой',
-        weight: 450,
-        price: 43.44
-    },
-    {
-        id: 1,
-        img: 'https://cutt.ly/zjGeLVQ',
-        productDescription: 'Салат Премия с морской капустой',
-        weight: 450,
-        price: 43.44
-    },
-    {
-        id: 2,
-        img: 'https://cutt.ly/zjGeLVQ',
-        productDescription: 'Салат Премия с морской капустой',
-        weight: 450,
-        price: 43.44
-    },
-    {
-        id: 3,
-        img: 'https://cutt.ly/zjGeLVQ',
-        productDescription: 'Салат Премия с морской капустой',
-        weight: 450,
-        price: 43.44
-    },
-    {
-        id: 4,
-        img: 'https://cutt.ly/9jGrVUJ',
-        productDescription: 'Салат Премия с морской капустой',
-        weight: 450,
-        price: 43.44
-    },
-    {
-        id: 5,
-        img: 'https://cutt.ly/zjGeLVQ',
-        productDescription: 'Салат Премия с морской капустой',
-        weight: 450,
-        price: 43.44
-    },
-    {
-        id: 6,
-        img: 'https://cutt.ly/ZjGrGpd',
-        productDescription: 'Салат Премия с морской капустой',
-        weight: 432,
-        price: 12.20
-    },
-    {
-        id: 7,
-        img: 'https://cutt.ly/zjGeLVQ',
-        productDescription: 'Салат Премия с морской капустой',
-        weight: 450,
-        price: 43.44
-    },
-    {
-        id: 8,
-        img: 'https://cutt.ly/9jGrVUJ',
-        productDescription: 'Салат Премия с морской капустой',
-        weight: 450,
-        price: 43.44
-    },
-    {
-        id: 9,
-        img: 'https://cutt.ly/zjGeLVQ',
-        productDescription: 'Салат Премия с морской капустой',
-        weight: 1000,
-        price: 1000
-    },
-    {
-        id: 10,
-        img: 'https://cutt.ly/zjGeLVQ',
-        productDescription: 'Салат Премия с морской капустой',
-        weight: 450,
-        price: 43.44
-    },
-    {
-        id: 11,
-        img: 'https://cutt.ly/9jGrVUJ',
-        productDescription: 'Салат Премия с морской капустой',
-        weight: 233,
-        price: 100.50
-    },
-
-]
+import {Context} from '../../Context.js'
 
 const Cards = () => {
+
+    const [products, setProduct] = useContext(Context);
     return (
         <div className={'cards-wrapper'}>
             <ul className={'cards'}>
                 {
-                    data.map(product => {
-                        return <Card product={product}/>
+                    products.map(product => {
+                        return <Card products={product}/>
                     })
                 }
             </ul>
-            <Button title={'Показать ещё'} />
         </div>
     )
 }

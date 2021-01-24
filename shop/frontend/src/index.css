@@ -1,3 +1,7 @@
+:root {
+    font-size: 14px;
+}
+
 ul, li {
     margin: 0;
     padding: 0;
@@ -5,4 +9,13 @@ ul, li {
 
 li {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+    color: white;
 }

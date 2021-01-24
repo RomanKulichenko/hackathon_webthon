@@ -3,12 +3,12 @@ import './content.css'
 import Cards from "../cards/Cards";
 import SideBar from "../sidebar/SideBar";
 
-const Content = () => {
+const Content = ({products}) => {
     return (
         <div className={'container'}>
             <div className={'content'}>
                 <SideBar />
-                <Cards />
+                <Cards products={products}/>
             </div>
         </div>
     )
