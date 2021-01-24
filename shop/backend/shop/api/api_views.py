@@ -18,7 +18,7 @@ class BuckwheatProductView(ListAPIView):
     serializer_class = BuckwheatProductListSerializer
     filter_backends = [filters.SearchFilter]
 
-    # Поиск без учёта регистра по названию продукта ()
+    # Поиск без учёта регистра по названию продукта
     search_fields = ['$title']
 
     # '^' Starts-with search.
