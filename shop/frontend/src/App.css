@@ -1,9 +1,13 @@
-*, ::before, ::after {
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+
+  user-select: none;  
+  scroll-behavior: smooth;
 }
 
 .app {
   font-family: ProximaNova,Helvetica,Arial,sans-serif;
-  background-color: #F9F9F9;
-  margin: 0 3%;
+  background-color: #d8d8d8;
 }

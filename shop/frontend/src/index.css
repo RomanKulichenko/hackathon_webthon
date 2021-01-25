@@ -1,12 +1,19 @@
 :root {
     font-size: 14px;
+    --header-bg: #D2D4C8;
+    --main-text-color: #1a1a1a;
 }
 
-ul, li {
+ul {
+    list-style: none;
     margin: 0;
     padding: 0;
 }
-
+  
+img {
+    pointer-events: none;
+}
+  
 li {
     list-style: none;
 }
@@ -17,5 +24,7 @@ a {
 }
 a:hover {
     text-decoration: none;
-    color: white;
+    color: inherit;
+    /* color: white; */
+    cursor: pointer;
 }

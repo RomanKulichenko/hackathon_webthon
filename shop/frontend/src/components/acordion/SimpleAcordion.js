@@ -12,14 +12,14 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-function SimpleAccordion() {
+function SimpleAccordion({sortValue}) {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <Acordion  category={
+            <Acordion sortValue={()=>sortValue()} category={
                 [
-                    {acordionName: 'price', sortBy: 'По ціні', sortByLabel: 'sort_by_price'},
-                    {acordionName: 'weight', sortBy: 'По вазі', sortByLabel: 'sort_by_weight'}
+                    {acordionName: 'price', sortBy: 'За ціною', sortByLabel: 'sort_by_price'},
+                    {acordionName: 'weight', sortBy: 'За вагою', sortByLabel: 'sort_by_weight'}
                 ]
             }/>
         </div>

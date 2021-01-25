@@ -7,7 +7,7 @@ import orange from "@material-ui/core/colors/orange";
 import withStyles from "@material-ui/core/styles/withStyles";
 import '../acordion/acordion.css'
 import axios from "axios";
-import {Context} from '../../Context.js'
+import {Context} from '../../Context.js';
 
 export function RadioButtonsGroup({ariaLabel, acordionName}) {
     const OrangeRadio = withStyles({
@@ -23,7 +23,7 @@ export function RadioButtonsGroup({ariaLabel, acordionName}) {
     const [value, setValue] = useState('descending');
     const [products, setProduct] = useContext(Context);
 
-    let baseUrl = 'http://localhost:8000/api/v1/products/buckwheat/'
+    let baseUrl = 'http://localhost:8000/api/v1/products/buckwheat/';
 
     const handleChange = (event) => {
         setValue(event.target.value);
@@ -43,7 +43,7 @@ export function RadioButtonsGroup({ariaLabel, acordionName}) {
         }).then(res => {
             setProduct(res.data)
         })
-    }
+    };
 
     return (
         <FormControl component="fieldset">

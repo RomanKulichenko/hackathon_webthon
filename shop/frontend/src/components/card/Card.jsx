@@ -10,10 +10,12 @@ const Card = ({products}) => {
         link_to_shop_logo,
         weight,
         price,
-    } = products
+    } = products;
 
-    let integer_price = Math.trunc(price);
-    let fraction_price = 22;
+    // let integer_price = Math.trunc(price);
+    // let fraction_price = 22;
+    const [integer_price, fraction_price] = price.split('.');
+
     return (
         <li className="col-lg-4 col-md-6 mb-4">
             <div className="card h-100 container" key={id}>

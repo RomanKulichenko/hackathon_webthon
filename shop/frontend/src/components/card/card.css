@@ -34,6 +34,7 @@
 }
 
 .product-logo_wrapper img {
+    object-fit: contain;
     width: 10rem;
     height: 10rem;
 }

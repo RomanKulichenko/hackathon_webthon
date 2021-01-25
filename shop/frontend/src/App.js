@@ -6,18 +6,19 @@ import Loader from "./components/loader/Loader";
 import axios from "axios";
 import { Context } from "./Context";
 
+
 function App() {
 
-    const [products, setProduct] = useState()
+    const [products, setProduct] = useState(data);
 
     useEffect(() => {
         axios({
             method: "GET",
-            url: "http://localhost:8000/api/v1/products/buckwheat/?order_by_price=low_to_high"
+            url: "http://localhost:8000/api/v1/products/buckwheat/"
         }).then(res => {
             setProduct(res.data)
         })
-    }, [])
+    }, []);
 
     return (
         <Context.Provider value={[products, setProduct]}>
