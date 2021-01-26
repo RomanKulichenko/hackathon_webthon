@@ -13,7 +13,6 @@ function BasicTextFields({setText}) {
                 placeholder="Шо шукаємо?"
                 onChange={(e) => setText(e.target.value)}
             />
-            <button className={'btn btn-primary'}>Знайти</button>
         </div>
     );
 }

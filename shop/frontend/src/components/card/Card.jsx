@@ -12,8 +12,6 @@ const Card = ({products}) => {
         price,
     } = products;
 
-    // let integer_price = Math.trunc(price);
-    // let fraction_price = 22;
     const [integer_price, fraction_price] = price.split('.');
 
     return (
@@ -21,11 +19,9 @@ const Card = ({products}) => {
             <div className="card h-100 container" key={id}>
                 <div className="product-header">
                     <div className="product-logo_wrapper">
-                        <a href="#">
                             <img className="product-logo_img card-img-top"
                                  src={image}
                                  alt="product-logo" className="product-logo"/>
-                        </a>
                     </div>
 
                     <div className="product-title_block">
