@@ -1,0 +1,73 @@
+.clear {
+    clear: both;
+}
+
+label {
+    float: left;
+}
+
+.custom-radio label{
+    display: flex;
+    align-items: center;
+}
+
+.custom-radio [type="radio"]:checked,.custom-radio [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.custom-radio [type="radio"]:checked + .custom-radio__label,.custom-radio [type="radio"]:not(:checked) + .custom-radio__label {
+    position: relative;
+    padding: 6px 0 4px 38px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.custom-radio [type="radio"]:checked + .custom-radio__label:before,.custom-radio [type="radio"]:not(:checked) + .custom-radio__label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 26px;
+    height: 26px;
+    border: 2px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.acordionLogo {
+    font-size: 1.3rem;
+    font-family: "Times New Roman";
+}
+
+.custom-radio [type="radio"]:checked + .custom-radio__label:after,.custom-radio [type="radio"]:not(:checked) + .custom-radio__label:after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: #007BFF;
+    position: absolute;
+    top: 6px;
+    left: 6.5px;
+    border-radius: 100%;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.custom-radio [type="radio"]:not(:checked) + .custom-radio__label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.custom-radio [type="radio"]:checked + .custom-radio__label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.custom-radio__label {
+    font-size: 1.2rem;
+    font-family: "Sitka Text";
+}

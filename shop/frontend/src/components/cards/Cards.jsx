@@ -1,12 +1,21 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import './cards.css'
 import Card from "../card/Card";
+import {Context} from '../../Context.js'
 
 const Cards = () => {
+
+    const [products] = useContext(Context);
     return (
-        <ul className={'product-list with-filter '}>
-            <Card /> // map
-        </ul>
+        <div className={'cards-wrapper'}>
+            <ul className={'cards'}>
+                {
+                    products.map(product => {
+                        return <Card products={product}/>
+                    })
+                }
+            </ul>
+        </div>
     )
 }
 

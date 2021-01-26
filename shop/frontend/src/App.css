@@ -1,16 +1,13 @@
-*, ::before, ::after {
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+
+  user-select: none;  
+  scroll-behavior: smooth;
 }
 
 .app {
   font-family: ProximaNova,Helvetica,Arial,sans-serif;
-
-}
-
-.container {
-  width: 100%;
-  min-height: 100%;
-  background: #fffaeb;
-  display: flex;
-  flex-direction: column;
+  background-color: #d8d8d8;
 }

@@ -1,2 +1,9 @@
+.card-wrapper {
+    display: flex;
+}
 
-
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

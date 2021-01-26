@@ -1,0 +1,30 @@
+:root {
+    font-size: 14px;
+    --header-bg: #D2D4C8;
+    --main-text-color: #1a1a1a;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+img {
+    pointer-events: none;
+}
+  
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+    color: inherit;
+    /* color: white; */
+    cursor: pointer;
+}
